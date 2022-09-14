@@ -1,5 +1,14 @@
+body {
+    font-family: 'Domine', serif;
+}
+
+.img-responsive {
+    max-width: 100%;
+    
+}
 .hero_image {
-    background: url(food1.jpg) no-repeat;
+    background: url(heroimage.jpg) no-repeat;
+    -webkit-background-size: cover;
     background-size: cover ;
     height: 100vh;
     position: relative;
@@ -11,4 +20,68 @@
     top: 50%;
     left: 50%;
      transform: translate(-50%, -50%); 
+}
+.hero_wrapper h1 {
+    font-size:2.4rem;
+    text-align: center;
+}
+
+.hero_wrapper  span {
+margin-left:5rem;
+display: inline-block;
+margin-bottom: 5rem;
+}
+
+.form_code {
+    text-align: center;
+}
+
+.form_code  .post_code {
+display: block;
+width: 80%;
+margin-left:auto;
+margin-right:auto;
+border-radius:2em;
+padding: .6rem;
+border:none;
+outline: none;
+}
+
+.form_code button {
+   width: 40%;
+   text-align: center;
+   background-color: #0c52a7;
+   color: white;
+   padding: .6rem;
+   border-radius: .3rem;
+   border: none;
+   margin:1rem auto 0rem;
+}
+
+.product {
+    width: 80%; 
+    margin-top: .3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_list_item {
+    float: left;
+    width: 30%;
+    margin-left: .5rem;
+}
+
+
+.product_list_item:first-of-type  {
+    margin: left 0;
+}
+
+
+
+
+@media screen  and (max-width:700px) {
+   .product_list_item {
+    width: 100%;
+    float: none;
+   } 
 }
